@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,200&family=Ingrid+Darling&family=Josefin+Sans&family=Lobster&family=Merriweather:ital,wght@0,400;1,300&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,200&family=Ingrid+Darling&family=Josefin+Sans&family=Lobster&family=Merriweather:ital,wght@0,400;1,300&family=Pacifico&family=Poppins:wght@300&family=Send+Flowers&display=swap');
+/*
+form{
+	margin: 3 auto;
+	width : 80%;
+	padding : 1em;
+	border : 1px solid #CCCCCC;
+	text-align:center;
+}
+
+form div {
+	margin-top:2em;
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+}
+
+label {
+	font-family:verdana;
+	color:rgb(20, 19, 19);
+	font-weight:bold;
+	display:inline-block;
+	width: 80px;
+	text-align:left;
+	padding:10px 100px;
+	background-color:rgb(235, 235, 245);
+	border-radius:50px;
+}
+
+input, textarea {
+	font: 1em sans-serif;
+	width : 70%;
+	box-sizing:border-box;
+	border: 1px solid #d18d8d;
+	margin-left:40px;
+}
+
+input:focus, textarea:focus{
+	border-color: #000000;
+}
+*/
+#textarea {
+	vertical-align:top;
+	height:5em;
+	width:100%;
+    background:#eee;
+    padding:1rem;
+    margin:.7rem 0;
+    border-radius: .5rem;
+    color:var(--black);
+    font-size: 1.7rem;
+}
+
+#formbutton{
+	color:var(--black);
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-size: 3rem;
+    text-transform: capitalize;
+    
+}
+.contact form .titre{
+	text-align: center;
+	border-radius: 30Px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.contact form .titre h4{
+    color:var(--black);
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-size: 300%;
+    text-align: center;
+	font-family: 'IBM Plex Serif', serif;
+
+    font-family: 'Ingrid Darling', cursive;
+
+    font-family: 'Josefin Sans', sans-serif;
+
+    font-family: 'Lobster', cursive;
+
+    font-family: 'Merriweather', serif;
+
+    font-family: 'Pacifico', cursive;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Send Flowers', cursive;
+}
+
+.contact form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .inputBox input,
+.contact form textarea{
+    width:100%;
+    background:#eee;
+    padding:1rem;
+    margin:.7rem 0;
+    border-radius: .5rem;
+    color:var(--black);
+    font-size: 1.7rem;
+}
+.contact form .inputBox label{
+	font-size: 100%;
+}
+.contact form textarea{
+	padding-bottom: 100px;
+}
+
+button {
+	color: white;
+	font-weight:bold;
+	margin-left: .5em;
+	background-color:lightblue;
+	padding: 8px 30px;
+	border-radius: 25px;
+}
+
+button:hover{
+	font-size:1.1em;
+	padding: 9px 32px;
+	background-color: rgb(100, 153, 189);
+}
+
+.msg, .msg p {
+	font-size:1.1em;
+	text-align:center;
+}
+
+
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+#successMessage{
+	background-color: green;
+
+}
+.success {
+	padding: 20px;
+	background-color: green;
+	color: white;
+	opacity: 1;
+	transition: opacity 0.6s;
+	margin-bottom: 15px;
+  }
+  .alertwarning{
+	padding: 20px;
+	background-color: #f44336;
+	color: white;
+	opacity: 1;
+	transition: opacity 0.6s;
+	margin-bottom: 15px;
+  }
+  .closebtn {
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+	color: black;
+  }
+#errorMessage{
+	background-color: red;
+}
+
+#IDzone {
+	margin-top:10px;
+	padding : 40px;
+	/*background-color: rgb(116, 123, 126);*/
+	border : 1px solid rgb(133, 133, 163);
+	border-radius:10px;
+	overflow: auto;
+	background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.xiaohongshu.com%2Fmobile%2Ftags%2F2296082420641638546%3Fname%3D%25E5%25BE%25AE%25E4%25BF%25A1%25E6%259C%258B%25E5%258F%258B%25E5%259C%2588%25E8%2583%258C%25E6%2599%25AF%25E5%259B%25BE&psig=AOvVaw3Rfos46IGaXHNKky6kQAX-&ust=1648899133514000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJi6rZLi8vYCFQAAAAAdAAAAABAE");
+}
+.IDzone{
+	background:url() no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#IDzone form{
+	margin: 0 auto;
+	width : 80%;
+	padding : 0;
+	text-align:center;
+	border:0;
+	overflow: auto;
+}
+.IDzone form{
+	background:#fff;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin:2rem auto;
+    width: 100%;
+    padding:2rem;
+}
+
+#ID_name {
+	margin: top 100px;;
+	padding: 100px;;
+	font-family:verdana;
+	color:rgb(20, 19, 19);
+	font-weight: bolder;
+	display:inline-block;
+	width: 80px;
+	text-align:center;
+	border-radius:50px;
+	font-size:600%;
+	margin-top:14px;
+	margin-bottom:50px;
+	padding-bottom:50px;
+}
+
+ #ID_name strong {
+	
+	
+	font-size:600%;
+	margin-top:14px;
+	margin-bottom:50px;
+	padding-bottom:50px;
+	text-align:center;
+}
+ .ID_myblog {
+	margin-top: 20px;;
+	margin-bottom: 60px;
+	padding-top: 80px;
+
+}
+
+.IDzone form .ID_myblog p {
+	margin:0;
+	padding-top:18px;
+	font-size:200%;
+	text-align: center;
+}
+
+.IDzone form .ID_logout {
+	margin-top:8px;
+	padding: 10px;;
+	float:right;
+	width: 100%;
+	text-align:right;
+}
+
+#IDzone form .ID_logout button {
+	color: white;
+	font-weight:bold;
+	margin-left: .5em;
+	background-color: #5898ad;
+	padding: 8px 30px;
+	border-radius: 25px;
+	font-size:0.9em;
+}
+
+#IDzone form .ID_logout button:hover {
+	color: white;
+	font-weight:bold;
+	margin-left: .5em;
+	background-color: #325864;
+	padding: 8px 30px;
+	border-radius: 25px;
+	font-size:0.9em;
+}
+
+.monblog{
+	text-align: center;
+	width: 100%;
+	background:#fff;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin:2rem auto;
+    font-size: 180%;
+    padding:2rem;
+}
+
+.blogPost{
+	margin : 20px auto;
+	width:90%;
+	border: 4px double pink;
+	border-radius:25px;
+}
+#blogPost{
+	width:100%;
+    padding:2rem;
+    background:#fff;
+    border:var(--border);
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+#postContent {
+	margin : 10px auto;
+	width:85%;
+}
+.postContent{
+	color:var(--light-color);
+    font-size: 1.6rem;
+    line-height: 1.7;
+    padding:1rem 0;
+}
+
+.postTitle{
+	background-color:pink;
+	border-radius: 22px 22px 0px 0px;
+	overflow: auto;
+	padding-top: 1.5rem;
+    font-size: 2.5rem;
+}
+#postTitle{
+	padding-top: 1.5rem;
+    font-size: 2.5rem;
+    color:var(--black);
+}
+.postTitle h3 {
+	
+	text-align: center;
+	font-size:1.5em;
+}
+
+#postTitle p {
+	margin: 0px 0px 10px 70px;
+	padding:0;
+	color:black;
+	font-style: italic;
+}
+.postTitle p{
+	padding-top: 2rem;
+    font-size: 1.5rem;
+    color:var(--orange);
+}
+.links{
+    
+    margin-top: .5rem;
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+ .links .user{
+    margin-right: auto;
+}
+
+ .links .icon{
+    padding-right: 1rem;
+}
+.links a{
+    font-size: 1.5rem;
+    color:var(--light-color);
+}
+
+.links a i{
+    padding-right: .2rem;
+    color:var(--black);
+}
+
+.links a:hover{
+    color:var(--orange);
+}
+
+ .links a:hover i{
+    color:var(--orange);
+}
+.postModify {
+	float:right;
+}
+
+.postModify form{
+	float:right;
+	margin:0px 30px 0 0;
+	padding:0px;
+	border:0;
+}
+
+.postModify form button{
+	margin:20px 0px 0px 0px;
+}
+
+.postAuthor {
+	float: right;
+	color:white;
+	font-size:1.4em;
+	font-weight:bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align:right;
+	margin: 20px 10px 0px 0px;
+}
+
+.HideFormContainer{
+	float:right; 
+	width:25%;
+	text-align: left;
+}
+
+#passHide{
+	margin-top:62px;
+	padding-left:10px;
+}
+/*
+.formfield{
+	text-align:right;
+	width:100%;
+}
+
+.formfield .label{
+	position:absolute;
+	top: 0 ;
+	left: 0;
+	padding: 10px 0;
+	color: #fff;
+	/*这个属性的默认值是auto 默认是这个元素可以被点击
+	但是如果我们写了none  就是这个元素不能被点击，就好像它可见但是不能用  
+	可望而不可及*/
+	/*这个就是两者的区别*//*
+	pointer-events: none;
+	/*加个过度*//*
+	transition: all 0.5s;
+	text-align: left;
+
+}*/
+
+
+.full-height {
+	height: 100vh;
+}
+
+.flex-center {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.position-ref {
+	position: relative;
+}
+
+.top-right {
+	position: absolute;
+	right: 10px;
+	top: 18px;
+}
+
+.content {
+	text-align: center;
+}
+
+.title {
+	font-size: 84px;
+}
+
+.links>a {
+	color: #636b6f;
+	padding: 0 25px;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: .1rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.m-b-md {
+	margin-bottom: 30px;
+}
